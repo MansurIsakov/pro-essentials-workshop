@@ -4,3 +4,7 @@ dist
 *.tsbuildinfo
 *.prompt.*
 .vscode/*.code-snippets
+
+# System files
+.DS_Store
+Thumbs.db
