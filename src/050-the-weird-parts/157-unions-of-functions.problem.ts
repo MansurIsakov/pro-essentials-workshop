@@ -6,7 +6,9 @@ const objOfFunctions = {
 
 const format = (input: string | number | boolean) => {
   const inputType = typeof input as "string" | "number" | "boolean";
-  const formatter = objOfFunctions[inputType];
+  const formatter = objOfFunctions[inputType] as (
+    input: string | number | boolean
+  ) => string;
 
   return formatter(input);
 };
