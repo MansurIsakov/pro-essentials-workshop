@@ -9,7 +9,10 @@
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "declaration": true,
+    "composite": true,
+    "declarationMap": true
   },
   "include": ["src"]
 }
