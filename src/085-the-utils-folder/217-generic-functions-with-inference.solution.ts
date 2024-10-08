@@ -1,7 +1,7 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
-const uniqueArray = <T>(arr: T[]) => {
+const uniqueArray = <T>(arr: T[]): T[] => {
   return Array.from(new Set(arr));
 };
 
