@@ -5,9 +5,9 @@
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "declaration": true,
-    "skipLibCheck": true,
+    // "skipLibCheck": true,
     "noEmit": true,
     "strict": true,
     "moduleDetection": "force"
-  },
+  }
 }
