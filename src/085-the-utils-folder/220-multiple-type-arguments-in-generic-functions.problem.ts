@@ -1,13 +1,13 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
-type PromiseFunc<TResult, TArgs> = (
-  ...args: TArgs[]
+type PromiseFunc<TArgs extends any[], TResult> = (
+  ...args: TArgs
 ) => Promise<Error | TResult>;
 
 const safeFunction =
-  <TResult, TArgs extends any[]>(func: PromiseFunc<TResult, TArgs>) =>
-  async (...args: TArgs[]) => {
+  <TArgs extends any[], TResult>(func: PromiseFunc<TArgs, TResult>) =>
+  async (...args: TArgs) => {
     try {
       const result = await func(...args);
       return result;
